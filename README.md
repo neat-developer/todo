@@ -1,2 +1,3 @@
 ## Neat Developer
-You can download this template `git clone git@github.com:neat-developer/template.git`.
+demo: https://neat-developer.github.io/todo/app/
+You can download this project `git clone git@github.com:neat-developer/todo.git`.
