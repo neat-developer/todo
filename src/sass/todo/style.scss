@@ -1,0 +1,117 @@
+$white: #eee;
+$orange: #f18e40;
+$red: #c23946;
+$gray: #2d2d2d;
+$green: #5cb85c;
+$todo-app-height: 300px;
+$todo-app-width: 450px;
+
+$margin-and-padding-value: 15px;
+
+.todo-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: $todo-app-width;
+  height: $todo-app-height;
+  border: 1px solid lighten($orange, 20%);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: $margin-and-padding-value;
+  background: lighten($orange, 10%);
+
+  ul {
+    list-style: none;
+  }
+
+  h2, .todo-app-header {
+    margin-bottom: $margin-and-padding-value;
+  }
+
+  h2 {
+    color: $white;
+    text-align: center;
+  }
+
+  .todo-app-header {
+    .todo-field-add, .todo-field-add-button {
+      height: 34px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+    .todo-field-add {
+      width: 80%;
+      border: none;
+      text-indent: $margin-and-padding-value;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .todo-field-add-button {
+      width: 19%;
+      background: $green;
+      color: $white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .todo-field-add-button:hover {
+      background: darken($green, 5%);
+    }
+  }
+
+  .todo-app-list {
+    height: $todo-app-height / 2;
+    overflow-y: auto;
+    .todo-app-list-item {
+      width: 100%;
+      height: 34px;
+      margin-bottom: 4px;
+      background: $orange;
+      color: $white;
+      line-height: 34px;
+    }
+  }
+
+  .todo-app-list-item-status, .todo-app-list-item-remove {
+    cursor: pointer;
+  }
+
+  .todo-app-list-item-status {
+    margin: 0 $margin-and-padding-value;
+    color: lighten($green, 2%);
+    font-size: 22px;
+    &:hover {
+      color: lighten($green, 5%);
+    }
+  }
+
+  .todo-app-list-item-name, .todo-app-list-item-remove, .todo-app-list-item-status {
+    vertical-align: middle;
+  }
+
+  .todo-app-list-item-checked {
+    text-decoration:line-through;
+  }
+
+  .todo-app-total {
+    color: $white;
+    height: 34px;
+    line-height: 34px;
+    text-align: right;
+  }
+
+  .todo-app-list-item-remove {
+    color: $red;
+    float: right;
+    margin-right: $margin-and-padding-value;
+    &:hover {
+      color: darken($red, 5%);
+    }
+  }
+}

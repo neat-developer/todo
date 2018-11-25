@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+
+body {
+  background: #e27442;
+  font-family: 'Roboto', sans-serif; }
+
+.inline-block {
+  display: inline-block; }
+
+.todo-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 450px;
+  height: 300px;
+  border: 1px solid #f8c69f;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  background: #f4aa70; }
+  .todo-container ul {
+    list-style: none; }
+  .todo-container h2, .todo-container .todo-app-header {
+    margin-bottom: 15px; }
+  .todo-container h2 {
+    color: #eee;
+    text-align: center; }
+  .todo-container .todo-app-header .todo-field-add, .todo-container .todo-app-header .todo-field-add-button {
+    height: 34px;
+    border-radius: 5px;
+    font-size: 20px; }
+  .todo-container .todo-app-header .todo-field-add {
+    width: 80%;
+    border: none;
+    text-indent: 15px; }
+    .todo-container .todo-app-header .todo-field-add:focus {
+      outline: none; }
+  .todo-container .todo-app-header .todo-field-add-button {
+    width: 19%;
+    background: #5cb85c;
+    color: #eee;
+    border: none;
+    cursor: pointer; }
+  .todo-container .todo-app-header .todo-field-add-button:hover {
+    background: #4cae4c; }
+  .todo-container .todo-app-list {
+    height: 150px;
+    overflow-y: auto; }
+    .todo-container .todo-app-list .todo-app-list-item {
+      width: 100%;
+      height: 34px;
+      margin-bottom: 4px;
+      background: #f18e40;
+      color: #eee;
+      line-height: 34px; }
+  .todo-container .todo-app-list-item-status, .todo-container .todo-app-list-item-remove {
+    cursor: pointer; }
+  .todo-container .todo-app-list-item-status {
+    margin: 0 15px;
+    color: #63bb63;
+    font-size: 22px; }
+    .todo-container .todo-app-list-item-status:hover {
+      color: #6ec06e; }
+  .todo-container .todo-app-list-item-name, .todo-container .todo-app-list-item-remove, .todo-container .todo-app-list-item-status {
+    vertical-align: middle; }
+  .todo-container .todo-app-list-item-checked {
+    text-decoration: line-through; }
+  .todo-container .todo-app-total {
+    color: #eee;
+    height: 34px;
+    line-height: 34px;
+    text-align: right; }
+  .todo-container .todo-app-list-item-remove {
+    color: #c23946;
+    float: right;
+    margin-right: 15px; }
+    .todo-container .todo-app-list-item-remove:hover {
+      color: #ae333f; }

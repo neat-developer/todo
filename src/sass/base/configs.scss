@@ -1,0 +1,18 @@
+$body-background-color: #e27442;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+body {
+  background: $body-background-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inline-block {
+  display: inline-block;
+}
